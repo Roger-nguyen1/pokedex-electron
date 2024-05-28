@@ -5,28 +5,15 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';img-src 'self' https://raw.githubusercontent.com"
+      content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com/ 'unsafe-inline';img-src 'self' https://raw.githubusercontent.com; font-src 'self' https://fonts.gstatic.com/"
     />
     <link href="./styles.css" rel="stylesheet" />
-    <title>Pokedex</title>
+    <title>Pokedex with Electron JS</title>
   </head>
   <body>
-    <h1>Pokedex</h1>
+    <h1>Pokedex with Electron JS</h1>
 
-    <div id="pokemonContainer">
-      <div class="pokemon electric">
-        <div class="imgContainer">
-          <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-            alt="Pikachu"
-          />
-        </div>
-        <div class="info">
-          <h3 class="name">Pikachu</h3>
-          <span class="type">Type: <span>electric</span></span>
-        </div>
-      </div>
-    </div>
+    <div id="pokemonContainer"></div>
 
     <button id="next">Next</button>
 
